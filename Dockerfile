@@ -1,11 +1,11 @@
 FROM alpine:latest
 
-ENV TERRAFORM_VERSION="0.12.20" \
+ENV #TERRAFORM_VERSION="0.12.20" \
     HELM_VERSION="v2.14.1"
 
 WORKDIR /tmp
 
-COPY --from=hashicorp/terraform:0.12.0 /bin/terraform /bin/
+COPY --from=hashicorp/terraform:latest /bin/terraform /bin/
 COPY . .
 
 RUN apk add --no-cache curl && \
