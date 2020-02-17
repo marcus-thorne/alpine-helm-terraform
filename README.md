@@ -2,4 +2,5 @@
 
 This Alpine image includes:
 - Helm v2.14.1
-- Terraform 0.12.20
+- Terraform latest stable
+- Kubectl latest stable
